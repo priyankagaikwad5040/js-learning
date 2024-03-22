@@ -16,7 +16,7 @@ var isWorking;
 var typeofWork=typeof isWorking;
 console.log("---------------------Before Initialization--------------");
 console.log("Working status value before initialization        -",isWorking);
-console.log(" Data Type of Working before initialization       -",typeof typeofWork);
+console.log(" Data Type of Working before initialization       -",typeofWork);
 isWorking=true;
 console.log("---------------------After Initialization--------------");
 console.log("Working Status value after initialization         -",isWorking);

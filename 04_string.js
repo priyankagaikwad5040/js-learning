@@ -24,51 +24,28 @@ var sentence="Zoom Video Communications, Inc. is a communications technology com
     var join=first.concat(last);
     console.log("Concat Two string           -",join);
 
+    console.log("================Replace()");
+    var greet="Good Morning";
+    var afterreplace=greet.replace("Morning","Afternoon");
+    console.log( afterreplace);
+
+    console.log("===================toUppercase()");
+    var inupperCase=greet.toUpperCase();
+    console.log(`${greet} in UpperCase ${inupperCase}`);
+
+    console.log("=============trim()");
+    var  greet="Good Morning         ";
+    var afterTrim=greet.trim();
+    console.log(`before trim   :${greet} and after trim ${afterTrim}`);
+          
+    console.log("==============includes()");
+    console.log(`${greet} includes ${greet.includes("Morn")}`);
+
+    console.log("================slice()");
+    console.log(`${greet.slice(1,5)}`);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*console.log(`========== trim() ==================`);
+console.log(`========== trim() ==================`);
 var greet = "   Good Morning   ";
 var lengthBeforeTrim = greet.length;
 console.log(` ${greet} it's length is : ${lengthBeforeTrim} `);
@@ -77,6 +54,8 @@ var greetAfterTrim = greet.trim();
 var lengthAfterTrim = greetAfterTrim.length;
 console.log(` ${greetAfterTrim} it's length is : ${lengthAfterTrim} `);
 console.log(`Total spaces removed is: ${lengthBeforeTrim-lengthAfterTrim}`);
+
+
 console.log(`========== includes() ==================`);
 var greet = "Good Morning";
 var result = greet.includes("nin");
@@ -102,18 +81,19 @@ console.log(`========== split() ==================`);
 var greet = "Good Morning";
 var resultValue = greet.split(" ")
 console.log(resultValue);
-console.log(`Total words are: ${resultValue.length}`);*/
-
-/*console.log(`========== split() ==================`);
-var totalWord = "I am Happy Buddy";
-var resultValue = totalWord.split(" ")
-console.log(resultValue);
 console.log(`Total words are: ${resultValue.length}`);
 
-var totalWord = "I am learning JS the language of internet"
-var resultValue = totalWord.split(" ")
-console.log(resultValue);
+
+function totalWords(statement1){
+
+var resultValue = statement1.split(" ")
+/*console.log(resultValue);
 console.log(`Total words are: ${resultValue.length}`);*/
+return resultValue.length;
 
-
+}
+var word=totalWords("I am happy buudy");
+console.log(`Total words are in "I am happy buddy"${word}`);
+var word=totalWords("I am learning JS the language of internet");
+console.log(`Total words are in "I am learning JS the language of internet"${word}`);
 

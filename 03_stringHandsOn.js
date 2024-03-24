@@ -15,6 +15,7 @@ function stringHandsOn(){
     var index=sentence.indexOf("good");
     console.log(`Index of "good " word in the given string ${index}`);
     console.log(`The Substring from index 22 from given string is   :${sentence.substring(22,len)}`);
+    
 
 
 
